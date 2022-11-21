@@ -4,7 +4,7 @@
 #include <vector>
 #include "valeur.hpp"
 #include <algorithm>
-
+#include <stdexcept>
 class Echantillon{
 
     std::vector<Valeur> _v;
@@ -14,7 +14,10 @@ class Echantillon{
         void ajouter(double a);
         Valeur getMinimum() const ;
         Valeur getMaximum() const ;
+        Valeur getValeur(int i) const;
 };
 
+	using const_iterator = typename std::vector<Valeur>::const_iterator;
+ /* def begin et end (voir si il faut utiliser cont ou it classique*/
 
 #endif
