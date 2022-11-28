@@ -6,6 +6,7 @@
 #include "classe.hpp"
 
 
+
 class Histo{
     std::vector<Classe> v;
     double borneInf;

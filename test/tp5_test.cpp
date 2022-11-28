@@ -205,9 +205,9 @@ TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
   REQUIRE ( c.getQuantite() == Approx(n[i++]) );
  }
 } 
-
+/*
 //----------------------------------------------------------------------------------------------- 14
-/*TEST_CASE ( "TP3_Histogramme::Generique" ) {
+TEST_CASE ( "TP3_Histogramme::Generique" ) {
  using histo_t = Histogramme<>;
 
  histo_t h(5.0,15.0,5);
@@ -225,8 +225,8 @@ TEST_CASE ( "TP3_Histogramme::Echantillon" ) {
   REQUIRE ( c.getQuantite() == 0u );
   ++i;
  }
-}*/
-
+}
+*/
 //----------------------------------------------------------------------------------------------- 15
 /*TEST_CASE ( "TP3_Histogramme::FoncteurGreater" ) {
  using histo_t = Histogramme<std::greater<Classe>>;

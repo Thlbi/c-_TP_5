@@ -39,3 +39,9 @@ Valeur Echantillon::getValeur(int i) const{
     }
 }
 
+Echantillon::iterator Echantillon::begin(){
+    return _v.begin();
+}
+Echantillon::iterator Echantillon::end(){
+    return _v.end();
+}

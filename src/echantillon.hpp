@@ -8,16 +8,20 @@
 class Echantillon{
 
     std::vector<Valeur> _v;
+
     public:
+        using iterator = typename std::vector<Valeur>::iterator;
+
         Echantillon();
         int getTaille();
         void ajouter(double a);
         Valeur getMinimum() const ;
         Valeur getMaximum() const ;
         Valeur getValeur(int i) const;
+        iterator begin();
+        iterator end();
 };
 
-	using const_iterator = typename std::vector<Valeur>::const_iterator;
- /* def begin et end (voir si il faut utiliser cont ou it classique*/
+
 
 #endif
